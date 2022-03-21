@@ -1,4 +1,4 @@
-# CHAPTER2
+# CHAPTER4
 
 ```값을 표현하는 최소단위: 8bit == 1byte```
 
