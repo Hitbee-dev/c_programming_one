@@ -5,6 +5,7 @@ int main(){
 	char op;	
 	// 연산을 진행할 x값 y값 결과값 3개를 써야하니까 변수도 3개를 만들어 줄게요.
 	int x, y, result;
+	int check = 0;
 	
 	printf("수식을 입력하시오(예: 2 + 5) \n");
 	printf(">>");
@@ -22,8 +23,12 @@ int main(){
 		result = x % y;
 	} else {
 		printf("지원되지 않는 연산자 입니다. \n");
+		check = 1;
 	}
-
-	printf("%d %c %d = %d \n", x, op, y, result);
+	
+	if(check == 0){
+		printf("%d %c %d = %d \n", x, op, y, result);
+	}
+	
 	return 0;
 }
