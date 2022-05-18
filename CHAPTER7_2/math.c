@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main(){
-    int x, y, answer, i;
+    int x, y, answer;
     srand(time(NULL));
 
     for (int i=0; i<10; i++){
